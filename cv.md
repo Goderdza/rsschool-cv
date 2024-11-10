@@ -16,13 +16,14 @@
 - **Frameworks & Libraries:** React
 - **Version Control:** Git, GitHub
 - **Databases:** MySQL
-- **Personal:** Teamwork, Detai-oriented, Time management, Quick Learner
+- **Personal:** Communication, Teamwork, Detai-oriented, Time management, Quick Learner
 
 ### Code Examples 
 
 - [TBC Concept](https://github.com/Goderdza/TBC)
+- [Scandiweb Task](https://github.com/Goderdza/ScandiwebTest)
 - [Practicing React](https://github.com/Goderdza/store-app)
-
+  
 ### Experience
 
 > Regularly participate in coding marathons and self-study courses focused on JavaScript and React to continuously improve my problem-solving skills and stay updated with the latest web development trends
