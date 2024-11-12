@@ -1,1 +1,1 @@
-# rsschool-cv
+https://goderdza.github.io/rsschool-cv/
