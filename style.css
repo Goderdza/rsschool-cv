@@ -7,27 +7,42 @@
 html,
 body {
     font-family: 'Times New Roman', Times, serif;
-    font-weight:600;
+    font-weight: 600;
     height: 100vh;
     overflow-x: hidden;
     overflow-y: scroll;
 }
+
+@media (min-width: 60%) {
+    .page {
+        max-width: 90%;
+    }
+}
+
 
 .page {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #f5deb3;
+    min-height: 100%;
+    margin: 0 auto;
+    padding: 0;
 }
 
 .container {
     height: 100%;
-    width: 60%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
-header {
+.header {
     background-color: #2b1f19;
     color: white;
+    display: flex;
+    width: 60%; 
+    margin: 0 auto; 
     justify-content: center;
     align-items: center;
     border-bottom: 2px solid #16100d;
@@ -35,26 +50,34 @@ header {
 
 .main {
     display: flex;
-    flex-grow: 1;
-    height: auto;
+    width: 100%; 
+    max-width: 60%;
+    margin: 0 auto;
 
 }
 
 .left-side {
-    display: flex;
     background-color: #2b1f19;
     color: white;
     flex-grow: 1;
     padding: 5px 10px 5px 10px;
+    width: 30%;
     justify-content: center;
+    align-items: center;
+    text-align: center;
 
 }
 
 
 .right-side {
     flex-grow: 1;
+    width: 70%;
     background-color: rgb(247, 247, 247);
 
+}
+
+P {
+    font-weight: 500;
 }
 
 .nav_list ul {
@@ -85,36 +108,10 @@ header {
 
 .profile {
     border: 5px solid white;
-    border-radius: 120px;
-}
-
-.footer {
-    background-color: #2b1f19;
-    color: white;
-    padding: 0;
-    border-bottom: 2px solid #16100d;
-    width: 100%;
-
+    border-radius: 10px;
 }
 
 
-.footer-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-around;
-
-}
-
-.footer-nav ul {
-    padding: 20px;
-}
-
-.footer-nav a {
-    text-decoration: none;
-    color: white;
-}
 
 .name {
     padding: 10px;
@@ -130,6 +127,11 @@ header {
     background-color: rgba(0, 36, 34, 0.836);
     padding: 30px 10px;
     border-radius: 10px;
+    transition: backround-color 0.5s ease;
+}
+
+.introduction:hover {
+    background-color: rgba(0, 19, 18, 0.836);
 }
 
 h2 {
@@ -152,6 +154,11 @@ h2 {
     background-color: rgba(0, 36, 34, 0.836);
     padding: 30px 10px;
     border-radius: 10px;
+    transition: backround-color 0.5s ease;
+}
+
+.experience:hover {
+    background-color: rgba(0, 19, 18, 0.836);
 }
 
 
@@ -170,6 +177,11 @@ h2 {
     background-color: rgba(0, 36, 34, 0.836);
     padding: 30px 10px;
     border-radius: 10px;
+    transition: backround-color 0.5s ease;
+}
+
+.education:hover {
+    background-color: rgba(0, 19, 18, 0.836);
 }
 
 .education ul {
@@ -181,10 +193,17 @@ h2 {
 
 .education li {
     color: black;
+    display: flex;
+    gap: 10px;
     margin: 10px;
     padding: 5px;
     background-color: #fff9ee;
     border-radius: 10px;
+}
+
+.examples pre {
+    border-radius: 10px;
+
 }
 
 .examples {
@@ -193,18 +212,41 @@ h2 {
     background-color: rgba(0, 36, 34, 0.836);
     padding: 30px 10px;
     border-radius: 10px;
+    transition: backround-color 0.5s ease;
 }
 
-.examples ul {
-    list-style-type: none;
+.projects {
+    color: white;
+    margin: 10px;
+    background-color: rgba(0, 36, 34, 0.836);
+    padding: 30px 10px;
+    border-radius: 10px;
+    transition: backround-color 0.5s ease;
 }
-.examples li {
+
+.projects:hover {
+    background-color: rgba(0, 19, 18, 0.836);
+}
+
+.projects ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.projects li {
+    text-align: center;
     color: black;
     margin: 10px;
-    padding: 5px;
+    padding: 20px;
     background-color: #fff9ee;
     border-radius: 10px;
     font-size: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.projects img {
+    border-radius: 10px;
 }
 
 .languages {
@@ -213,4 +255,114 @@ h2 {
     background-color: rgba(0, 36, 34, 0.836);
     padding: 30px 10px;
     border-radius: 10px;
+    transition: backround-color 0.5s ease;
+}
+
+.languages h2 {
+    padding-bottom: 20px;
+}
+
+.languages li {
+    padding-bottom: 15px;
+}
+
+.languages p {
+    padding: 10px 0 10px 0;
+}
+
+.languages:hover {
+    background-color: rgba(0, 19, 18, 0.836);
+}
+
+.contact {
+    padding: 10px;
+    border-radius: 20px;
+    text-align: left;
+    transition: background-color 0.5s ease;
+}
+
+.contact:hover {
+    background-color: #16100d;
+}
+
+.contact h2 {
+    padding-bottom: 25px;
+}
+
+.contact ul {
+    list-style-type: none;
+}
+
+.contact li {
+    padding-bottom: 20px;
+}
+
+.contact a {
+    color: white;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    color: rgba(255, 255, 255, 0.644);
+}
+
+.skills {
+    padding: 10px;
+    border-radius: 20px;
+    text-align: left;
+    transition: background-color 0.5s ease;
+}
+
+.skills:hover {
+    background-color: #16100d;
+}
+
+.skills h2 {
+    padding-bottom: 25px;
+}
+.skills ul {
+    list-style-type: none;
+}
+
+.skills li {
+    padding-bottom: 20px;
+}
+
+
+.footer {
+    background-color: #2b1f19;
+    color: white;
+    border-bottom: 2px solid #16100d;
+    padding: 10px;
+    flex-grow: 1;
+    width: 60%; 
+    margin: 0 auto; 
+    justify-content: center;
+    align-items: center;
+}
+
+
+.footer-nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.footer-nav li {
+    border-radius: 10px;
+    line-height: 40px;
+    padding: 10px;
+    cursor: pointer;
+    transition: backgroubd-color 0.5s ease;
+}
+
+.footer-nav li:hover {
+    background-color: rgba(0, 36, 34, 0.836);
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: white;
+    
 }
