@@ -64,10 +64,10 @@
 
                 <div class="introduction" id="about-me">
                     <h2>About Me</h2>
-                    <p>I’m currently a student working in the IT field as an IT Support Specialist, but my passion lies
-                        in software development. I’m working hard to transition into a React Developer role, dedicating
+                    <p>I&apos;m currently a student working in the IT field as an IT Support Specialist, but my passion lies
+                        in software development. I&apos;m working hard to transition into a React Developer role, dedicating
                         myself to learning and honing my skills through coursework, personal projects, and hands-on
-                        practice. I’m committed to growing in this field and eager to bring my problem-solving abilities
+                        practice. I&apos;m committed to growing in this field and eager to bring my problem-solving abilities
                         and technical background into development.</p>
                 </div>
 
@@ -81,7 +81,7 @@
                 <div class="education" id="education">
                     <h2>Education</h2>
                     <ul>
-                        <li>BTU - Business and Technology University: Bachelor's Degree in Information Technology</li>
+                        <li>BTU - Business and Technology University: Bachelor&apos;s Degree in Information Technology</li>
                         <li>GTU - Georgian Technical University: Currently studying for a Master's degree in Information Technology</li>
                     </ul>
                 </div>
@@ -95,15 +95,15 @@
                                 let startX;
                                 let scrollLeft;
                                  
-                                const initDrag = (swiperWrapper) => {
-                                  swiperWrapper.addEventListener("mousedown", (e) => {
+                                const initDrag = (swiperWrapper) =&gt; {
+                                  swiperWrapper.addEventListener("mousedown", (e) =&gt; {
                                     isDown = true;
                                     swiperWrapper.style.cursor = "grabbing";
                                     startX = e.pageX - swiperWrapper.offsetLeft;
                                     scrollLeft = swiperWrapper.scrollLeft;
                                   });
                                   
-                                  swiperWrapper.addEventListener("mousemove", (e) => {
+                                  swiperWrapper.addEventListener("mousemove", (e) =&gt; {
                                     if (!isDown) return;
                                     e.preventDefault();
                                     const x = e.pageX - swiperWrapper.offsetLeft;
@@ -111,12 +111,12 @@
                                     swiperWrapper.scrollLeft = scrollLeft - walk;
                                   });
                                   
-                                  swiperWrapper.addEventListener("mouseup", () => {
+                                  swiperWrapper.addEventListener("mouseup", () =&gt; {
                                     isDown = false;
                                     swiperWrapper.style.cursor = "grab";
                                   });
                                   
-                                  swiperWrapper.addEventListener("mouseleave", () => {
+                                  swiperWrapper.addEventListener("mouseleave", () =&gt; {
                                     isDown = false;
                                     swiperWrapper.style.cursor = "grab";
                                   });
