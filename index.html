@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Goderdzi Valishvili CV</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.js"></script>
 </head>
 
@@ -20,26 +20,26 @@
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#education">Education</a></li>
                     <li><a href="#code-examples">Code Examples</a></li>
+                    <li><a href="#projects">Projects</a></li>
                     <li><a href="#experience">Experience</a></li>
                     <li><a href="#languages">Languages</a></li>
                 </ul>
             </nav>
         </header>
+
         <main class="main">
             <div class="left-side">
                 <div>
-                    <img class="profile" src="132389359.jpg" alt="Profile picture of Goderdzi Valishvili" width="300px"
-                        height="300px">
+                    <img class="profile" src="132389359.jpg" alt="Profile picture of Goderdzi Valishvili" width="300px" height="300px">
                 </div>
                 <div class="contact" id="contact">
                     <h2>Contact</h2>
                     <ul>
                         <li>
-                            <a href="mailto:gag.valishvili@gmail.com">Gmail: gag.valishvili@gmail.com</a>.<br>
+                            <a href="mailto:gag.valishvili@gmail.com">Gmail: gag.valishvili@gmail.com</a><br>
                         </li>
                         <li>
-                            <a href="https://www.linkedin.com/in/goderdzi-valishvili-ba509b2b2"
-                                target="_blank">Linkedin</a>
+                            <a href="https://www.linkedin.com/in/goderdzi-valishvili-ba509b2b2" target="_blank">Linkedin</a>
                         </li>
                         <li>
                             Mobile: <strong>+995 555 555 555</strong>
@@ -49,25 +49,19 @@
                 <div class="skills" id="skills">
                     <h2>Skills</h2>
                     <ul>
-                        <li>
-                            Programing: JavaScript, HTML, CSS
-                        </li>
-                        <li>
-                            Frameworks: .React
-                        </li>
-                        <li>
-                            Databases: MySQL
-                        </li>
-                        <li>
-                            Personal: Communication, Teamwork, Detail-oriented, Time management, Quick Learner
-                        </li>
+                        <li>Programing: JavaScript, HTML, CSS</li>
+                        <li>Frameworks: React</li>
+                        <li>Databases: MySQL</li>
+                        <li>Personal: Communication, Teamwork, Detail-oriented, Time management, Quick Learner</li>
                     </ul>
                 </div>
             </div>
+
             <div class="right-side">
                 <div class="name">
                     <h1>Goderdzi Valishvili</h1>
                 </div>
+
                 <div class="introduction" id="about-me">
                     <h2>About Me</h2>
                     <p>I’m currently a student working in the IT field as an IT Support Specialist, but my passion lies
@@ -76,22 +70,22 @@
                         practice. I’m committed to growing in this field and eager to bring my problem-solving abilities
                         and technical background into development.</p>
                 </div>
+
                 <div class="experience" id="experience">
                     <h2>Experience</h2>
                     <p>Regularly participate in coding marathons and self-study courses focused on JavaScript and React
                         to continuously improve my problem-solving skills and stay updated with the latest web
                         development trends.</p>
                 </div>
+
                 <div class="education" id="education">
                     <h2>Education</h2>
                     <ul>
-                        <li>BTU<p>- Business and Technology University: Bachelor's Degree in Information Technology</p>
-                        </li>
-                        <li>GTU<p>- Georgian Technical University: Currently studying for a Master's degree in
-                                Information Technology</p>
-                        </li>
+                        <li>BTU - Business and Technology University: Bachelor's Degree in Information Technology</li>
+                        <li>GTU - Georgian Technical University: Currently studying for a Master's degree in Information Technology</li>
                     </ul>
                 </div>
+
                 <div class="examples" id="code-examples">
                     <h2>Code Example</h2>
                     <div class="content">
@@ -100,7 +94,7 @@
                                 let isDown = false;
                                 let startX;
                                 let scrollLeft;
-                                
+                                 
                                 const initDrag = (swiperWrapper) => {
                                   swiperWrapper.addEventListener("mousedown", (e) => {
                                     isDown = true;
@@ -108,7 +102,7 @@
                                     startX = e.pageX - swiperWrapper.offsetLeft;
                                     scrollLeft = swiperWrapper.scrollLeft;
                                   });
-                                
+                                  
                                   swiperWrapper.addEventListener("mousemove", (e) => {
                                     if (!isDown) return;
                                     e.preventDefault();
@@ -116,51 +110,45 @@
                                     const walk = (x - startX) * 0.88;
                                     swiperWrapper.scrollLeft = scrollLeft - walk;
                                   });
-                                
+                                  
                                   swiperWrapper.addEventListener("mouseup", () => {
                                     isDown = false;
                                     swiperWrapper.style.cursor = "grab";
                                   });
-                                
+                                  
                                   swiperWrapper.addEventListener("mouseleave", () => {
                                     isDown = false;
                                     swiperWrapper.style.cursor = "grab";
                                   });
                                 };
-                                
+                                 
                                 // Initialize the drag functionality on your swiper wrapper
                                 const conceptSwiperWrapper = document.querySelector(".swiper_wrapper");
                                 initDrag(conceptSwiperWrapper);
                             </code>
                         </pre>
-
                     </div>
                 </div>
+
                 <div class="projects" id="projects">
                     <h2>Projects</h2>
                     <ul>
-                        <li>TBC Concept<a href="https://github.com/Goderdza/TBC" target="_blank"><img src="tbc.png"
-                                    alt="tbc" width="150px"></a></li>
-                        <li>Scandiweb Task<a href="https://github.com/Goderdza/ScandiwebTest" target="_blank"><img
-                                    src="scandiweb.jpg" alt="scandiweb" width="150px"></a></li>
-                        <li>Practicing React<a href="https://github.com/Goderdza/store-app" target="_blank"><img
-                                    src="react.png" alt="React" width="150px"></a></li>
+                        <li>TBC Concept<a href="https://github.com/Goderdza/TBC" target="_blank"><img src="tbc.png" alt="tbc" width="150px"></a></li>
+                        <li>Scandiweb Task<a href="https://github.com/Goderdza/ScandiwebTest" target="_blank"><img src="scandiweb.jpg" alt="scandiweb" width="150px"></a></li>
+                        <li>Practicing React<a href="https://github.com/Goderdza/store-app" target="_blank"><img src="react.png" alt="React" width="150px"></a></li>
                     </ul>
                 </div>
+
                 <div class="languages" id="languages">
                     <h2>Languages</h2>
                     <ul>
-                        <li>English: Advanced <p>I have completed a university course focused on technical English,
-                                including phrases and terminology related to technology. Additionally, I am a confident
-                                speaker, having built relationships with people from different countries, and I
-                                regularly read books in English to further improve my language skills.</p>
-                        </li>
-                        <li>Georgian: Native <p>Born and raised in Georgia, Georgian is my native language.</p>
-                        </li>
+                        <li>English: Advanced<p>I have completed a university course focused on technical English, including phrases and terminology related to technology. Additionally, I am a confident speaker, having built relationships with people from different countries, and I regularly read books in English to further improve my language skills.</p></li>
+                        <li>Georgian: Native<p>Born and raised in Georgia, Georgian is my native language.</p></li>
                     </ul>
                 </div>
             </div>
         </main>
+
         <footer class="footer">
             <nav class="footer-nav">
                 <ul>
