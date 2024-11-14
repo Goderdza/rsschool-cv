@@ -1,0 +1,5 @@
+{
+    "files.simpleDialog.enable": true,
+    "files.trimFinalNewlines": false,
+    "files.trimTrailingWhitespace": true
+}

@@ -94,7 +94,7 @@
                                 let isDown = false;
                                 let startX;
                                 let scrollLeft;
-                                 
+
                                 const initDrag = (swiperWrapper) =&gt; {
                                   swiperWrapper.addEventListener("mousedown", (e) =&gt; {
                                     isDown = true;
@@ -102,7 +102,7 @@
                                     startX = e.pageX - swiperWrapper.offsetLeft;
                                     scrollLeft = swiperWrapper.scrollLeft;
                                   });
-                                  
+
                                   swiperWrapper.addEventListener("mousemove", (e) =&gt; {
                                     if (!isDown) return;
                                     e.preventDefault();
@@ -110,18 +110,18 @@
                                     const walk = (x - startX) * 0.88;
                                     swiperWrapper.scrollLeft = scrollLeft - walk;
                                   });
-                                  
+
                                   swiperWrapper.addEventListener("mouseup", () =&gt; {
                                     isDown = false;
                                     swiperWrapper.style.cursor = "grab";
                                   });
-                                  
+
                                   swiperWrapper.addEventListener("mouseleave", () =&gt; {
                                     isDown = false;
                                     swiperWrapper.style.cursor = "grab";
                                   });
                                 };
-                                 
+
                                 // Initialize the drag functionality on your swiper wrapper
                                 const conceptSwiperWrapper = document.querySelector(".swiper_wrapper");
                                 initDrag(conceptSwiperWrapper);
